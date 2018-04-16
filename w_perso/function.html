@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var eleves = [{
+                    nom : 'Antoine',
+                    note : 12
+                }, {
+                    nom : 'Jean',
+                    note : 6
+                }, {
+                    nom : 'Anne',
+                    note : 14
+                }, {
+                    nom : 'Jean-claude',
+                    note : 2
+                },{
+                    nom : 'Billy Boy',
+                    note : 9
+                }]
+
+        function afficherQuiALaMoyenne(eleves){
+            for (let i = 0; i < eleves.length; i++) {
+                const eleve = eleves[i];
+            
+                if (eleve.note > 10) {
+                    console.log(eleve.nom + ' est formidable')
+                } else {
+                    console.log(eleve.nom + ' est un cancre');
+                }
+            }
+        }
+
+        afficherQuiALaMoyenne(eleves);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

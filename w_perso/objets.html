@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var eleve = {
+            nom: 'Dusse',           //propriete
+            prenom: 'Jean-Claude',  //propriete
+            ville: 'Paris',         //propriete
+            
+            //methode
+            presenteToi : function(){
+                console.log(eleve.prenom + ' ' + eleve.nom + ' de ' + this.ville );
+            }
+        };
+
+        eleve.presenteToi();
+
+        var CdDuJour= function(cd_artiste,cd_album,cd_annee){
+            this.artiste = cd_artiste;
+            this.album = cd_album;
+            this.annee = cd_annee;
+
+            this.showCd = function(){
+                console.log('Album du jour: <bold>'+ this.album + '</bold> par <bold>' + this.artiste + '</bold> en <bold>' + this.annee + '</bold>');
+            }
+        };
+
+        var n = new CdDuJour('Red Hot Chili Peppers','Californication','2000');
+        n.showCd();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

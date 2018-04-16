@@ -1,0 +1,9 @@
+méthode = fonction encapsulée dans l'objet
+
+Objet - 
+
+Prototype
+
+propriete
+
+methodes
