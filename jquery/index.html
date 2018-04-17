@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .bloc1,.bloc2{padding: 50px;text-align: center;}
+        
+    .bloc1{
+        background-color: gray;
+    }
+    .bloc2{
+        background-color: red;
+    }
+    .bloc3{
+        background:#98bf21;
+        height:300px;
+        width:300px;
+        position:absolute;
+    }
+    
+    </style>
+</head>
+<body>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".bloc1").mouseover(function(){
+                $(".bloc1").css("background-color", "yellow");
+                $(".bloc1").css("color", "red");
+            });
+            $(".bloc1").mouseout(function(){
+                //autre maniere plus compacte
+                $(".bloc1").css({
+                    "background-color": "gray",
+                    "color":"black"
+                })
+            });
+
+            $("button").click(function(){
+                $(".bloc3").animate({left: '500px'});
+            });
+
+
+        });
+    </script>
+    <div class="bloc1">
+        <h2>mon bloc 1</h2>
+    </div>
+    <br>
+    <div class="bloc2">
+        <h2>mon bloc 2</h2>
+    </div>
+    <br>
+    <button>Start Animation</button>
+    <br>
+    <div class="bloc3">
+        <h2>mon bloc 3</h2>
+    </div>
+</body>
+</html>
