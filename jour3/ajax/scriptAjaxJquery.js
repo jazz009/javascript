@@ -1,5 +1,5 @@
 $.ajax({
-    url: 'https://jsonplaceholder.typicode.com/posts/1',
+    url: 'https://jsonplaceholder.typicode.com/posts',
     type: 'GET',
     header: {'Access-Control-Allow-Origin': '*'},
     crossDomain: true,
