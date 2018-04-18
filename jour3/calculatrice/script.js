@@ -5,23 +5,23 @@ var x = document.querySelectorAll("td");
 var i;
 for (i = 0; i < x.length; i++) { 
 
-    var myVal = x[i]
+	var myVal = x[i];
 
-    // console.log(myVal);
+	// console.log(myVal);
 
-    myVal.addEventListener("click",function(){ 
+	myVal.addEventListener("click",function(){ 
 
-        myTxt = this.textContent;
+		var	myTxt = this.textContent;
 
-        // var myInt = parseInt(myTxt);
-        // console.log(typeof myInt);
-        show(myTxt)
-    });
+		// var myInt = parseInt(myTxt);
+		// console.log(typeof myInt);
+		show(myTxt);
+	});
 
-// affiche dans l'ecran la touche cliquée
-function show(myTx){  
-    document.getElementById('screen').textContent = myTxt;
-}
+	// affiche dans l'ecran la touche cliquée
+	function show(myTx){  
+		document.getElementById("screen").textContent = myTxt;
+	}
 
 // reste a implementer le calcul
 
