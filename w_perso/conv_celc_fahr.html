@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Convertisseur Celsius / Fahrenheit</title>
+</head>
+<body>
+  <script>
+    var celsius = prompt('Entrez la température:', 'En Celcius');
+
+    function convertToF(celsius) {
+      var fahrenheit;
+      fahrenheit = celsius * 9;
+      fahrenheit /= 5;
+      fahrenheit += 32;
+      // console.log(fahrenheit);      
+      // return fahrenheit;
+
+      document.write('<br><br><h1 style="text-align : center">' + celsius + '°C sont donc équivalent à ' + fahrenheit +'°F </h1>');
+    }
+
+    convertToF(celsius);
+        
+  </script>
+
+</body>
+</html>   
